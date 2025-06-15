@@ -1,0 +1,81 @@
+Here’s a comprehensive list of all basic Git commands that developers frequently use in real-world practice, categorized for clarity:
+
+🔧 Repository Setup
+Command	               |                Description
+--------------------------------------------------------------------------
+git init	           |     Initialize a new Git repository
+git clone <url>	       |     Clone a remote repo locally
+
+📦 Staging and Committing
+Command	                  |                Description
+--------------------------------------------------------------------------
+git add <file>	          |     Stage specific file(s)
+git add .	              |     Stage all modified and new files
+git commit -m "message"   |	    Commit staged changes with a message
+git commit -am "message"  |  	Add & commit tracked files in one step
+
+📂 Checking Status & Logs
+Command	              |     Description
+--------------------------------------------------------------------------
+git status            |  	Show current status of working directory
+git log	              |     View commit history
+git show	          |     Show details of a specific commit
+
+🌿 Branches
+Command	                  |     Description
+--------------------------------------------------------------------------
+git branch                |    	List all branches
+git branch <name>	      |     Create a new branch
+git checkout <name>	      |     Switch to another branch
+git checkout -b <name>	  |     Create and switch to a new branch
+git merge <branch>	      |     Merge another branch into the current one
+git branch -d <name>	  |     Delete a local branch
+
+🔁 Syncing with Remote
+Command	                                         |      Description
+--------------------------------------------------------------------------
+git remote -v	                                 |      View remote connections
+git remote add origin <url>	                     |      Link local repo to remote
+git push -u origin <branch>	                     |      Push branch to remote and set upstream
+git push	                                     |      Push committed changes to remote
+git push --set-upstream origin origin/<branch>   |      Push for the first time to remote branch
+git fetch	                                     |      Fetch latest changes from remote (but not merge)
+git pull	                                     |      Fetch and merge from remote branch
+
+🧹 Undoing Changes
+Command	                          |      Description
+--------------------------------------------------------------------------
+git reset	                      |      Unstage changes from index
+git reset --hard	              |      Reset working directory and index to last commit
+git checkout -- <file>	          |      Discard local changes to a file
+git revert <commit>	              |      Revert a specific commit (creates a new one)
+
+💾 Stashing
+Command	                          |     Description
+--------------------------------------------------------------------------
+git stash	                      |     Save current changes temporarily
+git stash list	                  |     Show stashed items
+git stash apply	                  |     Reapply stashed changes
+git stash drop	                  |     Delete a specific stash
+
+🏷️ Tags
+Command	                          |    Description
+--------------------------------------------------------------------------
+git tag	                          |    List tags
+git tag <tagname>	              |    Create a tag
+git push origin <tagname>	      |    Push tag to remote
+
+📄 .gitignore and Config
+Command	                                              |    Description
+--------------------------------------------------------------------------
+.gitignore	                                          |    File listing what to exclude from Git
+git config --global user.name "Your Name"	          |    Set global username
+git config --global user.email "you@example.com"	  |    Set global email
+
+🧪 Helpful Shortcuts
+Command	                             |      Description
+--------------------------------------------------------------------------
+git diff                             |     	Show unstaged changes
+git diff --staged	                 |      Show staged changes
+git cherry-pick <commit>	         |      Apply a specific commit to current branch
+git log --oneline --graph	         |      Visual commit graph (compact view)
